@@ -1,0 +1,39 @@
+
+* TypeScript for Backend Devs
+
+** Who this article is for
+
+** What is TypeScript?
+
+** How does it compare to Java/C#?
+
+*** Object-oriented style
+
+*** Functional style
+
+** Example of building an API
+
+*** Description of purpose of the API (e.g. storing To Do list items)
+
+*** List to the technologies we're going to use
+
+*** Project initialisation from a template
+
+*** IDE setup
+
+*** Testing
+
+*** A suggested architecture for a simple API
+
+*** Unit testing
+
+** Extras
+
+*** Cyclic dependency detection
+
+*** npm audit
+
+*** Exhaustive checking with assertNever
+
+*** ESLint setup
+
