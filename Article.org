@@ -1,11 +1,65 @@
+* Questions for Mark
+
+** TODO Is it OK to say "I think" etc.?
 
 * TypeScript for Backend Devs
 
 ** Who this article is for
 
+If you are:
+
+  - a backend-oriented developer or a full-stack developer who (quite sensibly) prefers backend development
+  - experienced in a language like Java or C#
+  - curious about using TypeScript for backend development
+
+then I'd say you've come to the right place.
+
 ** What is TypeScript?
 
+/TypeScript/, or /TS/, is a programming language which, to oversimplify somewhat, takes JavaScript
+and adds some features which make it more suitable for building applications that are maintainable
+for the long term. As you might have guessed from the name, the most important of these features
+revolve around the type system it provides.
+
+So if you're just trying hack something together, you might want to choose a dynamically typed
+language language. And if you pick JavaScript for that purpose, you've potentially started your
+journey towards building a lovely TypeScript application as any valid JavaScript program is also a
+valid TypeScript program! In fact, you may as well call that file "foo.ts" right now.
+
+If you've been developing with Java or C# for a while, you'll be familiar with the concept of types,
+but as you get to know TypeScript, you may be pleasantly surprised by TypeScript's type system. Keep
+reading to find out why it's good (TODO Make this sound more natural).
+
 ** How does it compare to Java/C#?
+
+Since TypeScript is all about types, let's quickly compare those.
+
+You've got strings. Already these are a little contentious. Only a little, though. You just need to
+decide whether to delimit them with a single quote or a double quote.
+
+So these are both valid:
+
+#+BEGIN_SRC js
+  let foo = 'hello';
+  let bar = "goodbye";
+#+END_SRC
+
+For this article, I'll use double quotes. But please don't be offended if you're a single-quoter!
+
+There are also booleans. Not much to say about those, but it's probably worth mentioning that
+they're not your only option for expressing truth and falsehood (falsity? falseness?). You can, if
+you're so inclined, use numbers, or even strings! None of this will surprise you if you're coming
+from a JavaScript background.
+
+#+BEGIN_SRC js
+  let foo = "hello";
+  if (foo) {
+      console.log("What is the world coming to?");
+  }
+#+END_SRC
+
+This works because the string ~"hello"~ is considered "truthy". (TODO Reference truthy values on
+another site).
 
 *** Object-oriented style
 
